@@ -1,0 +1,22 @@
+.modalContent {
+  background-color: #383838;
+  border: none !important; /* Remove border */
+  box-shadow: none !important; /* Remove box shadow */
+}
+
+.modalHeader,
+.modalBody,
+.modalFooter {
+  background-color: #383838;
+  color: #fff; /* Ensures the text color is readable */
+  border: none !important; /* Remove any borders */
+  box-shadow: none !important; /* Remove any shadows */
+  outline: none !important; /* Remove any outlines */
+}
+
+.modalHeader .close {
+  color: #fff; /* Ensures the close button is visible */
+  border: none !important; /* Remove any border */
+  outline: none !important; /* Remove any outline */
+  box-shadow: none !important; /* Remove any shadow */
+}

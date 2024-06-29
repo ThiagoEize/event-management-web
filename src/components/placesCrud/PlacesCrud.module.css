@@ -1,0 +1,15 @@
+.navLinks {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a.selected {
+  color: blue;
+}

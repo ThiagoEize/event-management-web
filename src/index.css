@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38.13px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+}
+
+input {
+  padding: 8px 12px 8px 12px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px;
+  opacity: 0px;
+  background-color: #333b49;
+  color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: #333b49 !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 1000px #333b49 inset;
+  box-shadow: 0 0 0 1000px #333b49 inset;
+}
+
+select {
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #333b49;
+  background-color: #333b49;
+  color: white;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #333b49;
+  color: white;
+}
+
+.fixMe_addMarginBottom {
+  height: 0;
+}
+
+html,
+body,
+#root {
+  background-color: #191e28;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.mainContainer {
+  margin: auto auto;
+  width: 90%;
+  color: white;
+}
+
+.formContainer {
+  margin: auto auto;
+  width: 45%;
+  color: white;
+}
+
+.backgroundContainer {
+  background: #10141d;
+  border-radius: 20px;
+  padding: 32px 24px 32px 24px;
+  margin-top: 1.5rem;
+}
+
+.customRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.customRowSpace {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.customAlignRight {
+  margin-left: auto;
+}
+
+button {
+  padding: 16px;
+  gap: 8px;
+  border-radius: 6px !important;
+  opacity: 0px;
+  background: #cad6ec;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}

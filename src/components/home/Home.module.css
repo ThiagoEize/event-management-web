@@ -1,0 +1,41 @@
+.allPlacesContainer {
+  padding: 24px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  display: flex;
+  background: #2f3b28;
+  align-items: center;
+  color: white;
+}
+
+.allEventsContainer {
+  padding: 24px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  display: flex;
+  background: #461527;
+  align-items: center;
+  color: white;
+}
+
+.placeIcon,
+.eventIcon {
+  width: 30px;
+  height: 30px;
+  gap: 0px;
+  opacity: 0px;
+  margin-right: 0.5rem;
+}
+
+.button {
+  margin-left: auto;
+}
+
+.toy {
+  width: 102px;
+  height: 126px;
+  gap: 0px;
+  opacity: 0px;
+}

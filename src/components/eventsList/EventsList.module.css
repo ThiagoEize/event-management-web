@@ -1,0 +1,45 @@
+.eventsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.eventsTable th,
+.eventsTable td {
+  padding: 8px;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #10141d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button[disabled] {
+  background-color: #4e4f5b;
+  cursor: not-allowed;
+}
+
+.navLinks {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a.selected {
+  color: blue;
+}

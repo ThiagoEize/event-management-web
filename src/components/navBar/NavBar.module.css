@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 1rem;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.navbarBrand img {
+  width: 180px;
+  height: auto;
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.navbarLink {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbarLink:hover {
+  color: #ddd;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbarUser {
+  font-size: 1em;
+}

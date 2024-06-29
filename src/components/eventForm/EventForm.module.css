@@ -1,0 +1,45 @@
+.inputLabel {
+  width: 49%;
+}
+
+.inputLabel input {
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.link {
+  margin-left: auto;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancelar {
+  background: #10141d;
+  color: white;
+  box-shadow: none;
+  border: 1px solid white;
+}
+
+.customLine {
+  width: 96%;
+  height: 1px;
+  border-top: 0.1px solid lightgrey;
+  margin: 4rem auto;
+}
