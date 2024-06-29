@@ -6,9 +6,6 @@ import { useEventContext } from "../../context/EventContext";
 import { useNavigate, Link } from "react-router-dom";
 import "../../index.css";
 import styles from "./Home.module.css";
-import placeIcon from "../../assets/images/placeIcon.png";
-import eventIcon from "../../assets/images/eventIcon.png";
-import toy from "../../assets/images/toy.png";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -38,7 +35,7 @@ const Home: React.FC = () => {
     // <div className="container">
     <div className="mainContainer">
       <div className="customRow">
-        <img className={styles.toy} src={toy} alt="Lugares" />
+        <img className={styles.toy} src="/images/toy.png" alt="Lugares" />
         <div className="col-4 row">
           <h1>Olá, Thiago</h1>
           <p>Confira todos os seus eventos e locais em um só lugar!</p>
@@ -52,7 +49,7 @@ const Home: React.FC = () => {
                 <div className="customRow">
                   <img
                     className={styles.placeIcon}
-                    src={placeIcon}
+                    src="/images/placeIcon.png"
                     alt="Lugares"
                   />
                   <div>
@@ -90,7 +87,7 @@ const Home: React.FC = () => {
                 <div className="customRow">
                   <img
                     className={styles.eventIcon}
-                    src={eventIcon}
+                    src="/images/eventIcon.png"
                     alt="Eventos"
                   />
                   <div>
