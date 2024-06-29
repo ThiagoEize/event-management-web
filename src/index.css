@@ -26,7 +26,6 @@ input {
   gap: 8px;
   border-radius: 4px;
   border: 1px;
-  opacity: 0px;
   background-color: #333b49;
   color: white;
 }
@@ -110,7 +109,6 @@ button {
   padding: 16px;
   gap: 8px;
   border-radius: 6px !important;
-  opacity: 0px;
   background: #cad6ec;
   font-family: Inter;
   font-size: 16px;

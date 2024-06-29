@@ -34,7 +34,7 @@ const EventForm: React.FC = () => {
   useEffect(() => {
     const fetchPlaces = async () => {
       try {
-        const response = await axios.get(String(process.env.REACT_APP_API_URL));
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/places`);
         setPlacesList(response.data.data);
       } catch (error) {
         console.error("Error fetching places:", error);
