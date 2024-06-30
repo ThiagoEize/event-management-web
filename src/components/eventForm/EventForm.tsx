@@ -97,9 +97,6 @@ const EventForm: React.FC = () => {
       formState.hourEnd
     }:00`;
 
-    console.log("formattedDateStart:", formattedDateStart);
-    console.log("formattedDateEnd:", formattedDateEnd);
-
     try {
       const eventData = {
         ...formState,
@@ -110,8 +107,10 @@ const EventForm: React.FC = () => {
 
       if (formState.id) {
         updateEvent(formState.id, eventData);
+        navigate(-1);
       } else {
         addEvent({ ...eventData, id: Date.now().toString() });
+        navigate(-1);
       }
     } catch (error) {
       showResponse("Erro", "Data ou horas inválidas");

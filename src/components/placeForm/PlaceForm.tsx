@@ -129,8 +129,10 @@ const PlaceForm: React.FC = () => {
     };
     if (formState.id) {
       updatePlace(formState.id, placeData);
+      navigate(-1)
     } else {
       addPlace({ ...placeData, id: Date.now().toString() });
+      navigate(-1)
     }
   };
 
