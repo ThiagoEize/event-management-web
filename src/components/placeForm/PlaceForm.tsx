@@ -127,12 +127,15 @@ const PlaceForm: React.FC = () => {
         name: turnstile.name,
       })),
     };
+    try {
     if (formState.id) {
       updatePlace(formState.id, placeData);
-      navigate(-1)
     } else {
       addPlace({ ...placeData, id: Date.now().toString() });
-      navigate(-1)
+    }
+    navigate(-1);
+    } catch(err) {
+      console.log(err)
     }
   };
 

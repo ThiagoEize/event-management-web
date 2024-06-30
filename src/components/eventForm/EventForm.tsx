@@ -107,11 +107,10 @@ const EventForm: React.FC = () => {
 
       if (formState.id) {
         updateEvent(formState.id, eventData);
-        navigate(-1);
       } else {
         addEvent({ ...eventData, id: Date.now().toString() });
-        navigate(-1);
       }
+      navigate(-1);
     } catch (error) {
       showResponse("Erro", "Data ou horas inválidas");
     }
