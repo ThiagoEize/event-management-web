@@ -13,17 +13,35 @@ interface Field {
 const PlacesCrud: React.FC = () => {
   const navigate = useNavigate();
 
-  const [placeFieldsToDisplay, setPlaceFieldsToDisplay] = useState<Field[]>([
-    { key: "name", name: "Nome do lugar" },
-    { key: "address", name: "Endereço" },
-    { key: "turnstiles", name: "Catracas cadastradas" },
-    { key: "gates", name: "Portões cadastrados" },
-  ]);
+  const getInitialFieldsToDisplay = () => {
+    const storedFields = localStorage.getItem("placeFieldsToDisplay");
+    return storedFields
+      ? JSON.parse(storedFields)
+      : [
+          { key: "name", name: "Nome do lugar" },
+          { key: "address", name: "Endereço" },
+          { key: "turnstiles", name: "Catracas cadastradas" },
+          { key: "gates", name: "Portões cadastrados" },
+        ];
+  };
 
-  const [placeAvailableFields, setPlaceAvailableFields] = useState<Field[]>([
-    { key: "city", name: "Cidade" },
-    { key: "state", name: "Estado" },
-  ]);
+  const getInitialAvailableFields = () => {
+    const storedFields = localStorage.getItem("availablePlaceFields");
+    return storedFields
+      ? JSON.parse(storedFields)
+      : [
+          { key: "city", name: "Cidade" },
+          { key: "state", name: "Estado" },
+        ];
+  };
+
+  const [placeFieldsToDisplay, setPlaceFieldsToDisplay] = useState<Field[]>(
+    getInitialFieldsToDisplay
+  );
+
+  const [placeAvailableFields, setPlaceAvailableFields] = useState<Field[]>(
+    getInitialAvailableFields
+  );
 
   const [showModal, setShowModal] = useState(false);
 

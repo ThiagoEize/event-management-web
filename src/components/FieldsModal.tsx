@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Modal, Button, ListGroup } from "react-bootstrap";
 import { FaArrowsUpDown } from "react-icons/fa6";
 
@@ -43,24 +43,6 @@ const FieldsModal: React.FC<FieldsModalProps> = ({
   const ListGroupComponent: any = ListGroup;
   const ListGroupItem: any = ListGroup.Item;
   const ButtonComponent: any = Button;
-
-  useEffect(() => {
-    const savedFieldsToDisplay = localStorage.getItem(
-      storageKeyFieldsToDisplay
-    );
-    const savedAvailableFields = localStorage.getItem(
-      storageKeyAvailableFields
-    );
-    if (savedFieldsToDisplay && savedAvailableFields) {
-      setFieldsToDisplay(JSON.parse(savedFieldsToDisplay));
-      setAvailableFields(JSON.parse(savedAvailableFields));
-    }
-  }, [
-    storageKeyFieldsToDisplay,
-    storageKeyAvailableFields,
-    setFieldsToDisplay,
-    setAvailableFields,
-  ]);
 
   const handleDragStart = (index: any, fromAvailable: boolean) => {
     setDraggedField(index);
