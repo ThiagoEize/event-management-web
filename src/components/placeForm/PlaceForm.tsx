@@ -128,12 +128,11 @@ const PlaceForm: React.FC = () => {
       })),
     };
     try {
-    if (formState.id) {
-      updatePlace(formState.id, placeData);
-    } else {
-      addPlace({ ...placeData, id: Date.now().toString() });
-    }
-    navigate(-1);
+      if (formState.id) {
+        updatePlace(formState.id, placeData);
+      } else {
+        addPlace({ ...placeData, id: Date.now().toString() });
+      }
     } catch(err) {
       console.log(err)
     }

@@ -110,7 +110,6 @@ const EventForm: React.FC = () => {
       } else {
         addEvent({ ...eventData, id: Date.now().toString() });
       }
-      navigate(-1);
     } catch (error) {
       showResponse("Erro", "Data ou horas inválidas");
     }

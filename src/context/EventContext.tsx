@@ -65,7 +65,7 @@ const EventProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       await axios.post(`${process.env.REACT_APP_API_URL}/events`, event);
       setEventsList((prevEvents) => [event, ...prevEvents]);
       setTotalEvents((prevTotal) => prevTotal + 1);
-      navigate(-1); // Navigate to the previous page
+      navigate(-1);
       showResponse("Sucesso", "Evento adicionado com sucesso");
     } catch (error: any) {
       console.error("Error adding event:", error);
